@@ -20,7 +20,7 @@ As linguagens envolvidas na construção de um site são essas e cada uma possui
 
 
 
-### Curso Introdução ao HTML na Prática-Dio.me realizado pelo mentoras Diogo Mainardes/Sênior Developer.
+### Curso Introdução ao HTML na Prática-Dio.me realizado pelo mentora Diogo Mainardes/Sênior Developer.
 
 ## links úteis
 
