@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tags HTML</title>  
+</head>
+
+<body bgcolor="2ec4b6" text="#e71d36" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+  <center><h1 style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Definição do HTML</h1> 
+ </center>
+ 
+  
+  <!--Tag hr não necessita de fechamento, ela forma uma linha horizontal.
+-->
+  <hr/> 
+  
+  <h2 id="definicao_html" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Definição do HTML</h2>
+  
+  
+  <p>A Linguagem de Marcação de Hipertexto<dfn><abbr title="HyperText Markup 
+    Language">(HTML)</abbr>
+     </dfn>   é uma linguagem de marcação usada para criar 
+     sites. Ela utiliza 
+     tags HTML para estruturar páginas da web, permitindo que 
+     tenham cabeçalho, corpo, barra lateral e rodapé.</p>
+
+  <p>Tags html também são usadas para formatar texto, incorporar 
+    imagens ou atributos, criar listas e ligar arquivos 
+    externos. Essa última função permite que você modifique o 
+    visual da sua página ao incorporar arquivos <a href="#css">CSS</a><sup>*</sup> e outros objetos.</p>
+
+  <p>É importante usar as tags HTML adequadas, já que a estrutura 
+   incorreta pode quebrar a página da web. Pior do que isso, os 
+   motores de busca podem não serem capazes de ler a informação 
+   apresentada nas tags.</p>
+  <p> Abaixo segue as guias de referências com as tags mais utlizadas no HTML e 
+   também as menos utilizadas.
+    Aprendemos que é possível criar uma tabela e que podemos fazer algumas 
+    estilizações usando uma folha de estilo (style).</p>
+
+
+  
+  <h2 id="inicio" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Guias de Referências HTML</h2>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+  <ul>
+  <!--ancoragem clica no link e não sai da página, rediriona 
+  link da própria pagina-->
+    <li><a href="#definicao_html" style="text-decoration: none;color: 
+    #e71d36;">Definição do HTML</a></li>
+    <li><a href="#estrutura_html" style="text-decoration: none;color: 
+     #e71d36;">Estrutura do HTML</a></li>
+    <li><a href="#formatacao_texto" style="text-decoration: none;color: 
+    #e71d36;">Formatação de texto</a></li>
+    <li><a href="#links" style="text-decoration: none;color: 
+    #e71d36;">Links</a></li>
+    <li><a href="#listas" style="text-decoration: none;color: 
+    #e71d36;">Listas</a></li>
+    <li><a href="#formularios" style="text-decoration: none;color: 
+    #e71d36;">Formulários</a></li>
+    <li><a href="#tabelas" style="text-decoration: none;color: 
+    #e71d36;">Tabelas</a></li>
+    <li><a href="#referencias" style="text-decoration: none;color: 
+    #e71d36;">Referências</a></li>
+    
+  </ul>
+  
+  
+
+  <h2 id="estrutura_html" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Estrutura do HTML</h2>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+  <pre>&lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;head&gt;
+     &lt;title&gt;Título da página&lt;/title&gt;
+     &lt;meta charset="utf-8"/&gt;
+     &lt;/head&gt;
+     &lt;body&gt;
+
+     &lt;/body&gt;
+     &lt;/html&gt;</pre>
+  <del>
+    <p>Tag <mark>&lt;html&gt;</mark> mostra que a página usa o 
+     html </p>
+    <p>Tag <mark>&lt;head&gt;</mark> essa tag delimita o 
+     cabeçalho do 
+     documento. Não 
+     possui nenhum valor visível, porém é capaz de transmitir 
+     ao navegador diversas informações como nome da página,uso 
+     de fonte,e suas dependências</p>
+    <p>Tag <mark>&lt;title&gt;</mark>essa tag define o título 
+     da sua página, o nome 
+     que aparecerá na sua aba, janela ou guia. Por esta razão, 
+     a tag >title> é de grande importância para o SEO;</p>
+    <p>Tag <mark>&lt;meta charset="utf-8"/&gt;</mark> essa tag 
+     permite inserir 
+      metadados ao seu 
+     documento, no caso acima, a informação charset=”UTF-8″, 
+     que garante a compatibilidade do código com os caracteres 
+     de padrão latino americano;</p>
+    <p>Tag<mark>&lt;body&gt;</mark>  corpo do documento, tudo 
+     que o usuário vê é escrito dentro desta tag</p>
+  </del> 
+
+  <h2 id="formatacao_texto" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Formatação de texto HTML</h2>
+  
+  
+  <h3 style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans- 
+  serif;">Tags Continuadas:</h3>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+  
+ <ul>
+  <li>&lt;!--...--&gt; Define um comentário;</li>
+  <br>
+   <li>&lt;!DOCTYPE&gt;  Define o tipo de documento; (No HTML 4 existiam três 
+    (3) diferentes tipos de doctype, mas no HTML 5 temos apenas um (1) tipo 
+    &lt;!DOCTYPE HTML&gt;. É aqui que o navegador entende o tipo de documento 
+    e como ele deve interpretar as tags nele contidas.)</li><br>
+  
+    <li>&lt;a&gt; Define um hyperlink;</li><br>
+  
+    <li>&lt;abbr&gt; Define uma abreviação</li><br>
+    <li>&lt;address&gt; Define um endereço. (Passa a ser tratado como uma 
+    seção);</li><br>
+    <li>&lt;area&gt; Define uma área dentro de um mapa de imagem;</li><br>
+    <li>&lt;b&gt; Define um texto em negrito; (Possui o mesmo nível semântico 
+    que um SPAN, e também o estilo de negrito no texto. Contudo, ele não dá 
+    nenhuma importância para o texto marcado com ele.) </li><br>
+    <li>&lt;base&gt; Define uma base URL para todos os links da página;</li> 
+    <br>
+    <li>&lt;bdo&gt; Define a direção do texto apresentado;</li><br>
+    <li>&lt;blockquote&gt; Define uma citação longa;</li><br>
+    <li>&lt;body&gt; Define o corpo da página;</li><br>
+    <li>&lt;br&gt; Insere uma quebra de linha simples;</li><br>
+    <li>&lt;button&gt; Define um botão de comando;</li><br>
+    <li>&lt;caption&gt; Define o "caption" de uma tabela;</li><br>
+    <li>&lt;cite&gt; Define uma citação;</li><br>
+    <li>&lt;code&gt; Define o código texto do computador;</li><br>
+    <li>&lt;col&gt; Define os atributos da coluna da tabela;</li><br>
+    <li>&lt;colgroup&gt; Define um grupo de colunas da tabela;</li><br>
+    <li>&lt;dd&gt; Define uma descrição de definição;</li><br>
+    <li>&lt;del&gt; Define um texto deletado;</li><br>
+    <li>&lt;dfn&gt; Define um termo de definição;</li><br>
+    <li>&lt;div&gt; Define uma seção no documento;</li><br>
+    <li>&lt;dl&gt; Define uma lista de definição;</li><br>
+    <li>&lt;dt&gt; Define um termo de definição;</li><br>
+    <li>&lt;em&gt; Define um texto em ênfase;</li><br>
+    <li>&lt;fieldset&gt; Define um conjunto de campos (fieldset);</li><br>
+    <li>&lt;form&gt; Define um formulário;</li><br>
+    <li>&lt;h1&gt; até &gt;h6&gt; Define do cabeçalho 1 até o cabeçalho 6;</li>    <br>
+    <li>&lt;head&gt; Define uma informação sobre o documento. (Não aceita mais 
+   elementos Child como filho);</li><br>
+    <li>&lt;hr&gt; Define uma regra horizontal. (Tem o mesmo nível que um 
+    parágrafo, mas também é utilizado para fazer separações e quebras de 
+    linha);</li><br>
+    <li>&lt;html&gt; Define um documento html;</li><br>
+    <li>&lt;i&gt; Define um texto em itálico; (Possui o mesmo nível semântico 
+    que um SPAN. O texto continua sendo itálico e para usuários de leitores de 
+    tela, a voz utilizada é modificada para indicar ênfase. É de grande valor 
+    e utilidade para marcar, termos técnicos, termos em outras linguagens 
+    etc.) </li><br>
+    <li>&lt;iframe&gt; Define uma linhas sobre a janela (frame);</li><br>
+    <li>&lt;img&gt; Define uma imagem;</li><br>
+    <li>&lt;input&gt; Define um campo de inserção;</li><br>
+    <li>&lt;ins&gt; Define um texto inserido;</li><br>
+    <li>&lt;kbd&gt; Define um texto do teclado;</li><br>
+    <li>&lt;label&gt; Define uma "label" para o formulário;</li><br>
+    <li>&lt;legend&gt; Define um título para os campos (fields);</li><br>
+    <li>&lt;li&gt; Define os itens da lista;</li><br>
+    <li>&lt;link&gt; Define uma referência;</li><br>
+    <li>&lt;map&gt; Define uma imagem de mapa;</li><br>
+    <li>&lt;menu&gt; Define uma lista de "menus";</li><br>
+    <li>&lt;meta&gt; Define informações meta;</li><br>
+    <li>&lt;noscript&gt; Define uma seção noscript;</li><br>
+    <li>&lt;object&gt; Define um objeto incorporado;</li><br>
+    <li>&lt;ol&gt; Define uma lista ordenada;</li><br>
+    <li>&lt;optgroup&gt; Define um grupo de opção;</li><br>
+    <li>&lt;option&gt; Define uma opção em uma lista suspensa (drop-down 
+     list);  </li><br>
+    <li>&lt;p&gt; Define um parágrafo;</li><br>
+    <li>&lt;param&gt; Define um parâmetro para determinado objeto;</li><br>
+    <li>&lt;pre&gt; Define um texto pré-formatado;</li><br>
+    <li>&lt;q&gt; Define uma citação curta;</li><br>
+    <li>&lt;s&gt; Define um texto que não é mais correto.</li><br>
+    <li>&lt;samp&gt; Define um código de amostra;</li><br>
+    <li>&lt;script&gt; Define um script;</li><br>
+    <li>&lt;select&gt; Define uma lista selecionável;</li><br>
+    <li>&lt;small&gt; Define um pequeno texto;</li><br>
+    <li>&lt;span&gt; Define uma seção no documento;</li><br>
+    <li>&lt;strong&gt; Define um texto forte (similar ao negrito);</li><br>
+    <li>&lt;style&gt; Define um estilo;</li><br>
+    <li>&lt;sub&gt; Define um texto subscrito;</li><br>
+    <li>&lt;sup&gt; Define um texto sobrescrito;</li><br>
+    <li>&lt;table&gt; Define uma tabela;</li><br>
+    <li>&lt;tbody&gt; Define o corpo da tabela;</li><br>
+    <li>&lt;td&gt; Define uma célula da tabela;</li><br>
+    <li>&lt;textarea&gt; Define um área de texto;</li><br>
+    <li>&lt;tfoot&gt; Define o rodapé da tabela;</li><br>
+    <li>&lt;th&gt; Define o cabeçalho da tabela;</li><br>
+    <li>&lt;thead&gt; Define o cabeçalho da tabela;</li><br>
+    <li>&lt;title&gt; Define o título do documento;</li><br>
+    <li>&lt;tr&gt; Define uma linha da tabela;</li><br>
+    <li>&lt;ul&gt; Define uma lista desordenada;</li><br>
+    <li>&lt;var&gt; Define uma variável;</li><br>
+  </ul>
+
+
+  <h3 style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans- 
+  serif;">Tags Descontinuadas:</h3>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+
+<ul>
+  <li>&lt;acronym&gt; Define siglas em HTML 4.01. (Desenvolvedores preferem 
+  utilizar a tag &lt;abbr&gt;);</li><br>
+  <li>&lt;applet&gt; Define um miniaplicativo incorporado. (Ficou obsoleto em 
+  função da tag &lt;object&gt;);</li><br>
+  <li>&lt;basefont&gt; Define as propriedads da font padrão para todo o texto 
+  do documento. (Apenas efeito visual);</li><br>
+  <li>&lt;big&gt; Usado para tornar o texto maior. (Apenas efeito visual);</li><br>
+  <li>&lt;center&gt; Usado para alinhar texto e conteúdo no centro. (Apenas 
+  efeito visual);</li><br>
+  <li>&lt;dir&gt; Define a lista do diretório. (Ficou obsoleto em função da 
+  Tag &lt;ul&gt;);</li><br>
+  <li>&lt;font&gt; Especifica o tipo de fonte, tamanho, e cor do texto. 
+  (Apenas efeito visual);</li><br>
+  <li>&lt;frame&gt; Define uma janela particular dentro de um conjunto de 
+  "frames". (Fere princípios de usabilidade e acessibilidade);</li><br>
+  <li>&lt;frameset&gt; Define um conjunto de frames organizado por múltiplas 
+  janelas.(Fere princípios de usabilidade e acessibilidade);</li><br>
+  <li>&lt;noframes&gt; Texto exibido para navegadores que não lidam com 
+  "frames". (Fere princípios de usabilidade e acessibilidade);</li><br>
+  <li>&lt;strike&gt; Exibe texto rasurado. (Apenas efeito visual);</li><br>
+  <li>&lt;tt&gt; Define teletipo de texto. (Apenas efeito visual);</li><br>
+  <li>&lt;u&gt; Define sublinhado. (Apenas efeito visual);</li><br>
+  <li>&lt;xmp&gt; Define texto pré-formatado. (Ficou obsoleto em função da tag 
+  &lt;pre&gt;);</li><br>
+</ul>
+
+
+  <h2 id="links" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Links</h2>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+  <ul>
+    <li>&lt; a href= "" target="_blank(abre em outra aba") ou 
+     target="_self(abre na própria página)&gt; &lt;/a&gt; Tag 
+     âncora. 
+     Primariamente utilizada para inclusão de hyperlinks. 
+     &lt;pre&gt;);</li><br>
+    <li>&lt; a href=”mailto:”&gt; &lt;/a&gt; Tag dedicada para 
+    o envio de emails.</li><br>
+    <li>&lt; a href=”tel://###-###”&gt; &lt;/a&gt; Tag âncora 
+    para menção de números de contato. Como os números 
+    são clicáveis, é particularmente útil para usuários de 
+    celular. </li><br>
+    <li>&lt; a name=”name”&gt; &lt;/a&gt; Esta tag pode ser 
+     utilizada para navegação rápida para outra parte da página.</li><br>
+    <li>&lt; a href=”#name”&gt; &lt;/a&gt; Uma variação da tag 
+     acima, sendo utilizadação
+     somente para navegação de uma seção div.</li><br>
+    
+  </ul>
+  <p></p>
+
+  <h2 id="listas" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans- 
+  serif;">Listas</h2>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+  <p></p>
+  <ul>
+    <li>&lt; ol&gt; &lt;/ol&gt;Tag para lista ordenada ou 
+     numerada de ítens</li><br>
+    <li>&lt; ul&gt; &lt;/ul&gt;Tag para ítens desordenados.</li><br>
+    <li>&lt; dl&gt; &lt;/dl&gt;Tag para listas de ítens com 
+    definições</li><br>
+    <li>&lt; dt&gt; &lt; dt&gt; A definição de um único termo 
+    em linha com conteúdo.</li><br>
+    <li>&lt; dd&gt; &lt;dd&gt; A descrição do termo definido. 
+    </li><br>
+
+    <ol>
+    <li>Eu sou uma lista ordenada</li>
+    <li>Eu sou uma lista ordenada</li>
+    <li>Eu sou uma lista ordenada</li><br>
+    </ol>
+    <ul>
+    <li>Eu sou uma lista desordenada</li>
+    <li>Eu sou uma lista desordenada</li>
+    <li>Eu sou uma lista desordenada</li>
+    </ul>
+    <dl>
+    <dt>Sou uma dt</dt>
+    <dd>Sou uma dd</dd>
+    <dt>sou uma dt</dt>
+    <dd> </dd>
+    </dl>
+    
+  </ul>
+
+
+  <h2 id="formularios" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Formulários</h2>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+  <p></p>
+  <ul>
+    <li>&lt; form&gt; &lt;/form&gt;A tag pai de um formulário 
+     HTML.</li><br>
+    <li> action=”url”; A URL listada aqui é onde os dados do 
+      formulários serão enviados assim que preenchidos pelo
+      usuário.</li><br>
+    <li>method=””; Especifica qual método HTTP (POST ou GET) é
+      utilizado para envio do formulário</li>
+    
+  </ul>
+
+  <h2 id="tabelas" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Tabelas</h2>
+  <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+  <p>Pense na seguinte tabela: </p>
+  <table border="1" cellpadding="2" cellspacing="2">
+	<tbody><tr>
+		<td>
+			<p>A1 
+			</p>
+		</td>
+		<td>
+			<p>A2 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>B1 
+			</p>
+		</td>
+		<td>
+			<p>B2 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>C1 
+			</p>
+		</td>
+		<td>
+			<p>C2 
+			</p>
+		</td>
+	</tr>
+</tbody></table>
+  <p>Aqui temos três linhas e duas colunas. </p>
+  <p>Para criar o esqueleto desta tabela, as tags a seguir são
+      usadas nesta ordem: </p>
+  <table border="1" cellpadding="2" cellspacing="2">
+	<tbody><tr>
+		<td>
+			<p><font color="#0000ff">&lt;table&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a tabela 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;tr&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a primeira linha 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a primeira "célula" de dados (A1) 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a célula A1 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a segunda célula (A2) 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a célula A2 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/tr&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a primeira linha 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;tr&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a segunda linha 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a primeira célula de dados da segunda linha (B1) 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a célula B1 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a célula B2 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a célula B2 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/tr&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a segunda linha 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;tr&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a terceira linha 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a primeira célula de dados da terceira linha (C1)
+						</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a célula C1 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>inicia a célula C2 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/td&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a célula C2 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/tr&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a terceira linha 
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p><font color="#0000ff">&lt;/table&gt;</font> 
+			</p>
+		</td>
+		<td>
+			<p>fecha a tabela 
+			</p>
+		</td>
+	</tr>
+</tbody></table>
+  
+  
+  <h3 id="referencias" style="color: #fdfffc; font-family: Verdana, Geneva, Tahoma, sans-serif;">Referências</h3>
+    <small><a href="#inicio" style="text-decoration: none;color: 
+    white;">(Voltar)</a></small>
+<!-- ul (lista não ordenada, ol (lista ordenada)-->
+<!--Tag target="_blank" para a aba não ser carregada e abrir nova aba-->
+<!--Tag nav para tudo que for uma sessão navegavel-->
+  
+  <nav>
+    
+    <ul>
+      <li>
+        <a href="https://www.hostinger.com.br/tutoriais/codigos-html-prontos- 
+        guia-pdf" target="_blank" style="color:#e71d36;">Fonte de pesquisa</a>
+      </li>
+      <li>
+        <a href="https://www.homehost.com.br/blog/tutoriais/tags- 
+        html/#topico02" target="_blank" style="color:#e71d36;">Fonte de 
+         pesquisa Homehost</a>
+      </li>
+      <li>
+        <a href="https://www.devmedia.com.br/comandos-e-tags-html5/23618" 
+         target="_blank" style="color:#e71d36;">Fonte de pesquisa DEVMEDIA</a>
+      </li>
+      <li>
+        <a href="https://www.tc.df.gov.br/ice4/vordf/outros/html-comandos.html#" 
+         target="_blank" style="color:#e71d36;">Fonte de pesquisa tabelas</a>
+      </li>
+
+    </ul>   
+  </nav>
+  <blockquote cite="https://www.w3schools.com/css/">
+    <h5 id="css"><i>*CSS é a linguagem que usamos para estilizar um documento 
+    HTML.CSS descreve como os elementos HTML devem ser exibidos.</i></h5>
+  </blockquote>
+</body>
+
+</html>
+<!--Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>(Define a marcação de um texto), <small>( Define um pequeno texto), <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>(Define um texto subscrito;
+), <blockquote>(Define uma citação longa);
+Utilizar novas tags sugeridas: 
+<font><font> Especifica o tipo de fonte, tamanho, e cor do texto), 
+<del>(Define um texto deletado), 
+<p>, 
+<abbr>(Define uma abreviação a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto).-->
